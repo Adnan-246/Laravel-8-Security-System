@@ -42,4 +42,11 @@ require __DIR__.'/auth.php';
 //_Email Verification System Route on a blade file
 Route::get('/deposit/money', [FirstController::class, 'deposit'])->name('deposit.money')->middleware('verified');
 
+//_Encrypt Route Example
+Route::get('/user/details/{id}', [FirstController::class, 'details'])->name('user.detail');
+
+//_Hashing Example
+Route::post('/store/user', [FirstController::class, 'store'])->name('store.user');
+
+
 

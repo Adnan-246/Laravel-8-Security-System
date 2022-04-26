@@ -17,7 +17,17 @@
 
   <div class="crad-header">
     <div class=" ml-4 card-body">
-      <a class=" btn btn-primary" href="#">Deposit Now</a>
+      <a href="#" class=" btn btn-sm btn-primary">Deposit Now</a><br><br>
+      <a href="{{ route('user.detail', Crypt::encrypt('1')) }}" class="btn btn-sm btn-primary">Himel Details</a><br><br><br>
+      <form action="{{ route('store.user') }}" method="POST">
+        @csrf
+        <div>
+          <label>Password</label>
+          <input type="password" name="password" class="form-control" required>
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-info" >Submit</button>
+      </form>
     </div>
   </div>
   
