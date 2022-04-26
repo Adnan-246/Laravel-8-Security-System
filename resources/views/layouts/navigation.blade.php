@@ -43,7 +43,11 @@
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
+                            
                         </form>
+                        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="{{ route('deposit.money') }}">Deposit Money</a> 
+                        </div>
                     </x-slot>
                 </x-dropdown>
             </div>
