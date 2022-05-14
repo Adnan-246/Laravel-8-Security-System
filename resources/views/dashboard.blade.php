@@ -12,6 +12,24 @@
                   Hey , {{ Auth::user()->name }}
                   <br>
                   Your ID is : {{ Auth::user()->id }}
+                 
+                </div>
+                {{-- <br><br> --}}
+                <a href="{{ route('class.index') }}" class="btn btn-info btn-sm">Class</a>
+                <br><br>
+                <a href="" class="btn btn-danger btn-sm ">Students</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mx-3">
+                    <div class="card-body mx-3">
+                        <br><br>
+                       
+
+                    </div>
                 </div>
             </div>
         </div>

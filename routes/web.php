@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Http\Controllers\Example\FirstController;
+use App\Http\Controllers\admin\ClassController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,5 +56,6 @@ Route::post('/store/user', [FirstController::class, 'store'])->name('store.user'
 
 
 
-
+//_class crud routes
+Route::get('class', [ClassController::class, 'index'])->name('class.index');
 
